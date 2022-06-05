@@ -1,5 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
+/*
+to get the cool status bar do this in .xinitrc
+
+while true; do
+  xsetroot -name "$(echo \[TIME: "$( date + "%F %R")" ] \[POWER: "$( cat /sys/class/power_supply/BAT0/capacity)"%])"
+  sleep 1m
+done
+
+*/
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 0;        /* gaps size between windows */
